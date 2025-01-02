@@ -1,10 +1,10 @@
-name: csv
+name: run python
 
 on: push
 
 jobs:
-  read-csv:
-    name: test
+  python-code-run:
+    name: python code test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
