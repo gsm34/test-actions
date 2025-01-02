@@ -1,7 +1,7 @@
 name: run python
 
 on: 
-  push
+  push:
   workflow_dispatch:
 jobs:
   python-code-run:
