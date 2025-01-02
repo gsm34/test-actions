@@ -1,10 +1,10 @@
-name: csv
+name: checkout
 
 on: push
 
 jobs:
-  test:
-    name: test
+  checkout-test:
+    name: checkout code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
