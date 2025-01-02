@@ -1,0 +1,21 @@
+name: csv
+
+on: push
+
+jobs:
+  read-csv:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: checkout code
+        uses: actions/checkout@v4
+        with: 
+          repository: gsm34/test-actions
+          ref: main
+          path: splunk-api
+
+      - name: read csv and call splunk API
+        run:
+          pyhton splunk-api/readfile.py
