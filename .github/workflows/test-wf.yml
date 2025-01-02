@@ -3,6 +3,8 @@ name: run python
 on: 
   push:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *"
 jobs:
   python-code-run:
     name: python code test
