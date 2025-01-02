@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO,
                     datefmt='%Y-%m-%dT%H:%M:%S')
 
 # Read data from CSV file
-dir = pathlib.Path().cwd
+dir = pathlib.Path().cwd()
 print(dir)
 lookup_file = "{}{}".format(dir,"\\csv\test_csv.csv")
 lookup_content = []
