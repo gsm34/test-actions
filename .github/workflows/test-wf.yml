@@ -18,4 +18,4 @@ jobs:
 
       - name: read csv and call splunk API
         run:
-          pyhton splunk-api/readfile.py
+          python splunk-api/readfile.py
