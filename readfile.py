@@ -16,8 +16,8 @@ logging.basicConfig(level=logging.INFO,
 
 # Read data from CSV file
 dir = pathlib.Path().cwd
-
-lookup_file = {}{}.format(dir,"\\csv\test_csv.csv")
+print(dir)
+lookup_file = "{}{}".format(dir,"\\csv\test_csv.csv")
 lookup_content = []
 lookup_name = pathlib.Path(lookup_file).name
 
