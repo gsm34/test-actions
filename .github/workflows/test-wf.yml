@@ -2,7 +2,8 @@ name: run python
 
 on: 
   workflow_dispatch:
-  jobs:
+  
+jobs:
   python-code-run:
     name: python code test
     runs-on: ubuntu-latest
