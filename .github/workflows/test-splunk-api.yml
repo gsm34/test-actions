@@ -11,3 +11,4 @@ jobs:
       - name: custom - run curl command
         run:
           curl -d "name=test" https://httpbin.org/post
+          curl -sk --request POST https://thehartford.splunkcloud.com:8089/services/data/lookup_edit/lookup_contents -H "Authorization: Bearer test1234" -H "Content-Type: application/x-www-form-urlencoded" -d timeout=60 -d namespace=search -d lookup_file=zz_test.csv  -d contents=[[^"field1^",^"field2^"],[^"value1^",^"value2^"]] -d owner=nobody
