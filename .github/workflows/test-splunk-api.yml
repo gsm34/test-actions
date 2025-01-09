@@ -10,4 +10,4 @@ on:
       - uses: actions/checkout@v4
       - name: custom - read csv and call splunk API
         run:
-          python readfile.py
+          curl -d "name=test" https://httpbin.org/post
