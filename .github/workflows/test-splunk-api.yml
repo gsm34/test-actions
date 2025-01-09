@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: custom - run curl command
         run:
-          curl -sk --request POST https://thehartford.splunkcloud.com:8089/services
+          curl -sk --request POST https://thehartford.splunkcloud.com:8089/services -d timeout=60 
