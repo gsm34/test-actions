@@ -2,12 +2,12 @@ name: run curl
 
 on: 
   workflow_dispatch:
-  job:
+jobs:
   curl-run:
     name: curl command
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
-      - name: custom - read csv and call splunk API
+      - name: custom - run curl command
         run:
           curl -d "name=test" https://httpbin.org/post
