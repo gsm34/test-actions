@@ -2,7 +2,7 @@ name: run curl
 
 on: 
   workflow_dispatch:
-  jobs:
+  job:
   curl-run:
     name: curl command
     runs-on: ubuntu-latest
