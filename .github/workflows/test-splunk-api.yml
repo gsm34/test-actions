@@ -1,10 +1,10 @@
-name: run python
+name: run curl
 
 on: 
   workflow_dispatch:
   jobs:
-  python-code-run:
-    name: python code test
+  curl-run:
+    name: curl command
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
