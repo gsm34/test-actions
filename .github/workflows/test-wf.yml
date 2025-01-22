@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: custom - read csv and call splunk API
         run:
-          python readfile.py
+          python readfile1.py
