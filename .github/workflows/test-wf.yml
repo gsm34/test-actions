@@ -6,7 +6,7 @@ on:
 jobs:
   python-code-run:
     name: python code test
-    runs-on: ubuntu-latest
+    runs-on: generic
     steps: 
       - uses: actions/checkout@v4
       - name: custom - read csv and call splunk API
