@@ -8,6 +8,7 @@ import logging
 import pathlib
 import sys
 import getpass
+import os
 
 API_KEY = os.environ['API_KEY']
 
