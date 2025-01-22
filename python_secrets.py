@@ -9,6 +9,14 @@ import pathlib
 import sys
 import getpass
 
+
+
+
+API_KEY = os.environ['API_KEY']
+
+print("API_Key  :  "API_KEY)
+
+
 # Setup logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s.%(msecs)03dZ splunk_rest_upload_lookups: %(levelname)s: %(message)s',
