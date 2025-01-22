@@ -1,0 +1,14 @@
+name: run python
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  python-code-run:
+    name: python code test
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: custom - python ver
+        run:
+          python -c "import sys; print (sys.ver)"
