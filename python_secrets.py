@@ -11,7 +11,7 @@ import getpass
 
 API_KEY = os.environ['API_KEY']
 
-print("API_Key  :  "API_KEY)
+print("API_Key  :  ", API_KEY)
 
 #####################################################################################
 #################### comment all below
