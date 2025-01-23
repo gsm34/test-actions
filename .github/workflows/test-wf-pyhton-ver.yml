@@ -17,6 +17,9 @@ jobs:
           id -u
           echo "### userid 2       ###"          
           echo $UID
+          echo "### next cmd ############################"          
+          cd /usr/lib/python3/dist-packages
+          echo "### next cmd ############################"          
       - name: custom - python pip
         run:
           pip install requests
