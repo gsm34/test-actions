@@ -17,6 +17,8 @@ jobs:
           id -u
           echo "### userid 2       ###"          
           echo $UID
+          echo "### userid 2       ###"          
+          echo $USER
           echo "### next cmd ############################"          
           cd /usr/lib/python3/dist-packages
           echo "### next cmd ############################"    
