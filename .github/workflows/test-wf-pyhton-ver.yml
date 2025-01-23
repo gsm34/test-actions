@@ -10,8 +10,10 @@ jobs:
     steps: 
       - uses: actions/checkout@v4
       - name: custom - python ver
-        run:
+        run: |
           python -c "import sys; print (sys.version)"
+          id -u
+          echo $UID
       - name: custom - python pip
         run:
           pip install requests
