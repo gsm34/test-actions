@@ -22,6 +22,10 @@ jobs:
           echo "### next cmd ############################"    
           ls -ltr
           echo "### next cmd ############################"    
+          cd requests
+          echo "### next cmd ############################"              
+          ls -ltr
+          echo "### next cmd ############################"    
       - name: custom - python pip
         run:
           pip install requests
